@@ -1,0 +1,34 @@
+<!-- occurance of each character -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>hello</h1>
+    <script>
+        let s="i am feeling hungry"
+        let ch = [...s]//converting array
+        let res = " "
+        
+        for (let i = 0; i < ch.length; i++) {
+            let count=1
+            for (let j = i + 1; j < ch.length; j++) {
+                if (ch[i] == ch[j]) {
+                    count++
+                    ch[j] = ' '
+                }
+            }
+            if (ch[i] != ' ')
+                // res += ch[i]
+                console.log(ch[i],"=" ,count);
+        }
+        
+
+
+    
+    </script>
+</body>
+</html>

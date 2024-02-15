@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        //i/p-----javascript is very easy
+        //o/p-----easy very is javascript
+        //o/p-----tpircsavaj si yrev ysae
+        
+
+
+
+        // var s = "JavaScript is very easy";
+
+        // var str = s.split(" ");
+        // var res = str.reverse();
+        // var output = res.join(" ");
+        // console.log(output);
+
+
+
+
+
+        // o/p: tpircsavaj si yrev ysae
+
+        let s = "javascript is very easy";
+
+        let ch = [];
+        let str = "";
+        for (let i = 0; i < s.length; i++) {
+            if (s[i] == " " || i == s.length - 1) {
+                if (i == s.length - 1) {
+                    str += s[i];
+                }
+                ch.unshift(str);
+                str = "";
+            } else {
+                str += s[i];
+            }
+        }
+       
+
+        let res = ch.join(" ");
+        console.log(res);
+        let rev = "";
+        for (let i = res.length - 1; i >= 0; i--) {
+            rev += res[i];
+        }
+
+        console.log(rev);
+
+
+
+    </script>
+
+
+</body>
+
+</html>

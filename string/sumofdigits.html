@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //sum of digits in a string
+        // let s="dhruva123@45"
+        // let sum=0
+        // for (let i = 0; i < s.length; i++) {
+        //     let ch=s.charAt(i)
+        //     if(ch>="0" && ch<="9"){
+        //         let num=Number(ch)
+        //         sum+=num
+        //     }
+        // }
+        // console.log(sum);
+
+
+        //sum of 14+26+1+42 in a given string
+
+        let s = "jai14 bala26yy1a 42"
+        let sum = 0
+        let res = ""
+        for (let i = 0; i < s.length; i++) {
+            let ch = s.charAt(i)
+            if (ch >= "0" && ch <= "9") {
+                res += ch
+            }
+            else {
+                if (res != " ") {
+                    let num = Number(res)
+                    sum += num
+                    res = " "
+                }
+            }
+            if (i == s.length - 1) {
+                let num1 = Number(res)
+                sum += num1
+            }
+        }
+        console.log(sum);
+
+        
+
+
+    </script>
+</body>
+
+</html>

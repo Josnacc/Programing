@@ -1,0 +1,125 @@
+<!-- find maximum repeated character in a given string -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // let s="banana"
+        // let ch = [...s]
+        // let res = " "
+        // let max=0
+        // for (let i = 0; i < ch.length; i++) {
+        //     let count=1
+        //     for (let j = i + 1; j < ch.length; j++) {
+        //         if (ch[i] == ch[j]) {
+        //             count++
+        //             ch[j] = ' '
+        //         }
+        //     }
+
+        //     if(count>max && ch[i]!=' '){
+        //         max=count
+        //         res=ch[i]
+
+        //     }
+        // }
+
+        // console.log(res,"=" ,max)
+
+//find minumum repeated character in a given string 
+        // let s="banana"
+        // let ch = [...s]
+        // let res = " "
+        // let min=ch.length
+        // for (let i = 0; i < ch.length; i++) {
+        //     let count=1
+        //     for (let j = i + 1; j < ch.length; j++) {
+        //         if (ch[i] == ch[j]) {
+        //             count++
+        //             ch[j] = ' '
+        //         }
+        //     }
+
+        //     if(count<min && ch[i]!=' '){
+        //         min=count
+        //         res=ch[i]
+
+        //     }
+        // }
+
+        // console.log(res,"=" ,min)
+
+
+        //remove duplicate words in a string
+
+        let s1="madam is very beautiful. madam speaks malayalam"
+
+        let ch=s1.split(" ")
+        let res=''
+        // console.log(ch);
+        for (let i = 0; i < ch.length; i++) {
+            for (let j = i+1; j < ch.length; j++) {
+                if(ch[i]==ch[j]){
+                    ch[j]=" "
+                }
+            }
+            if(ch[i]!= " "){
+                
+                console.log(ch[i]);
+            }
+
+        }
+
+
+
+        //find no of vowels in string con
+
+        // let s2="hello"//dhraua@123
+
+        // let count=0
+        // for (let i = 0; i < s2.length; i++) {
+        //    if(s2.charAt(i)=="a" || s2.charAt(i)=="e" || s2.charAt(i)=="i" || s2.charAt(i)=="o" || s2.charAt(i)=="u"){
+        //     count++
+            
+        //    }
+        // }
+        // console.log(count);
+
+
+// asci value 0-48   9-57
+
+        // let a1 = "dhruva@123"
+        // let a = a1.toLowerCase()
+        // let vowels = 0
+        // let consonents = 0
+        // for (let i = 0; i < a.length; i++) {
+        //     if (a.charAt(i) >= 'a' && a.charAt(i) <= 'z') {
+        //         if (a.charAt(i) == 'a' || a.charAt(i) == 'e' || a.charAt(i) == 'i' || a.charAt(i) == 'o' || a.charAt(i) == 'u') {
+        //             vowels++;
+        //         }
+        //         else {
+        //             consonents++;
+        //         }
+        //     }
+
+
+
+        // }
+        // console.log(vowels)
+        // console.log(consonents)
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

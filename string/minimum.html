@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+//knowledge o/p:ledgewonk
+        let s="knowledge"
+        // let res
+        let mid=s.length-1/2
+
+        for (let i = mid; i < s.length; i++) {
+           res+=s.charAt(i)
+
+        }
+
+
+//repeated side by side remove
+
+
+
+        let star = 1
+        let space = 3
+        let res = ' '
+        let n = 7
+        for (let i = 1; i <= n; i++) {
+            for (let j = 1; j <= space; j++) {
+                res += " " 
+            }
+            for (let j = 1; j <= star; j++) {
+                res += "*"
+            }
+            if (i <= Math.trunc(n / 2)) {
+                star += 2
+                space--
+            }
+            else {
+                star -= 2
+                space++
+            }
+            res=res+"\n";
+
+        }
+        console.log(res)
+    </script>
+</body>
+
+</html>

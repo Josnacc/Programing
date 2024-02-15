@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //1.
+        // to convert lowercase to uppercase without use uppercase() method
+        // ASCI value of small 'm' 109 
+        // 109-32=77
+        // 77 is capital M ASCI value
+
+        // let s="Manjula"
+        // let str=""
+        // for (let i = 0; i < s.length; i++) {
+        //     let ch=s.charAt(i)
+        //     if(ch>='a' && ch<='z'){
+        //         let res=s.charCodeAt(i) -32
+        //         str+=String.fromCharCode(res)
+        //     }
+        // }
+        // console.log(str);
+
+        // let a = "manjula"
+        // let output = "";
+        // for (let i = 0; i < a.length; i++)
+        //     output += String.fromCharCode(a.charCodeAt(i) > 96 && a.charCodeAt(i) < 123 ? a.charCodeAt(i) - 32 : a.charCodeAt(i))
+        // console.log(output);
+
+
+
+        //2.
+        //i/p-I Love India
+        //o/p - I evol aidni
+
+        let s1 = "I Love India"
+        let s=""
+        let str = ""
+        for (let i = 0;i < s1.length; i++) {
+            let ch = s1.charAt(i)
+            
+            if (ch!= " " ) {
+               s=ch+s 
+            }
+           else{
+            str+=s+ " "
+            s=""
+           }
+           if(i==s1.length-1){
+            str+= " "+ s
+           }
+           
+        }
+        console.log(str)
+
+      
+
+
+        // function reverseInPlace(str) {
+        //     var words = [];
+        //     words = str.match(/\S+/g);
+        //     var result = "";
+        //     for (var i = 0; i < words.length; i++) {
+        //         result += words[i].split('').reverse().join('') + " ";
+        //     }
+        //     return result
+        // }
+        // console.log(reverseInPlace("I Love India"))
+
+
+            
+    </script>
+
+</body>
+
+</html>
